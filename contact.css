@@ -1,0 +1,703 @@
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+
+
+/* =========================================================
+   01. CONTACT PAGE
+========================================================= */
+
+.contact {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 120px 9% 60px;
+
+    visibility: hidden;
+    opacity: 0;
+
+    animation: show-content 1.5s linear forwards;
+    animation-delay: 1.6s;
+}
+
+
+/* =========================================================
+   02. PAGE HEADING
+========================================================= */
+
+.contact-heading {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.contact-heading > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #7cf03d;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-shadow: 0 0 12px rgba(124, 240, 61, .3);
+}
+
+
+.contact-heading h1 {
+    font-size: clamp(42px, 5vw, 62px);
+
+    line-height: 1.05;
+}
+
+
+.contact-heading h1 strong {
+    color: #7cf03d;
+
+    text-shadow: 0 0 20px rgba(124, 240, 61, .35);
+}
+
+
+.contact-heading p {
+    max-width: 620px;
+
+    margin: 12px auto 0;
+
+    color: #aeb1b5;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   03. CONTACT GRID
+========================================================= */
+
+.contact-grid {
+    display: grid;
+
+    grid-template-columns: .85fr 1.15fr;
+
+    gap: 22px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   04. CONTACT INFORMATION
+========================================================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+/* =========================================================
+   05. CONTACT CARD
+========================================================= */
+
+.contact-card {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 20px;
+
+    background: rgba(27, 32, 40, .94);
+
+    border: 1px solid rgba(124, 240, 61, .16);
+
+    border-radius: 14px;
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+
+.contact-card:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(124, 240, 61, .4);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .2);
+}
+
+
+/* =========================================================
+   06. CONTACT ICON
+========================================================= */
+
+.contact-icon {
+    width: 52px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(124, 240, 61, .06);
+
+    border: 1px solid rgba(124, 240, 61, .35);
+
+    border-radius: 11px;
+
+    color: #7cf03d;
+
+    font-size: 20px;
+
+    transition: .3s ease;
+}
+
+
+.contact-card:hover .contact-icon {
+    background: #7cf03d;
+
+    color: #1f242d;
+
+    box-shadow: 0 0 15px rgba(124, 240, 61, .3);
+}
+
+
+.contact-card span {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #7cf03d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-card h3 {
+    margin-bottom: 3px;
+
+    color: #fff;
+
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+.contact-card a {
+    color: #aeb1b5;
+
+    font-size: 12px;
+
+    transition: .3s ease;
+}
+
+
+.contact-card a:hover {
+    color: #7cf03d;
+}
+
+
+/* =========================================================
+   07. SOCIAL LINKS
+========================================================= */
+
+.contact-socials {
+    margin-top: auto;
+
+    padding: 20px;
+
+    background: rgba(27, 32, 40, .7);
+
+    border: 1px solid rgba(124, 240, 61, .12);
+
+    border-radius: 14px;
+}
+
+
+.contact-socials > span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #7cf03d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-socials > div {
+    display: flex;
+
+    gap: 10px;
+}
+
+
+.contact-socials a {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(124, 240, 61, .35);
+
+    border-radius: 50%;
+
+    color: #7cf03d;
+
+    font-size: 17px;
+
+    transition: .3s ease;
+}
+
+
+.contact-socials a:hover {
+    background: #7cf03d;
+
+    color: #1f242d;
+
+    box-shadow: 0 0 15px rgba(124, 240, 61, .3);
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   08. CONTACT FORM CARD
+========================================================= */
+
+.contact-form-card {
+    padding: 28px;
+
+    background: rgba(27, 32, 40, .94);
+
+    border: 1px solid rgba(124, 240, 61, .16);
+
+    border-radius: 17px;
+
+    transition: .3s ease;
+}
+
+
+.contact-form-card:hover {
+    border-color: rgba(124, 240, 61, .3);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .2);
+}
+
+
+/* =========================================================
+   09. FORM HEADING
+========================================================= */
+
+.form-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+}
+
+
+.form-icon {
+    width: 47px;
+    height: 47px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: rgba(124, 240, 61, .06);
+
+    border: 1px solid rgba(124, 240, 61, .35);
+
+    border-radius: 10px;
+
+    color: #7cf03d;
+
+    font-size: 18px;
+}
+
+
+.form-heading span {
+    display: block;
+
+    color: #7cf03d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.form-heading h2 {
+    margin-top: 2px;
+
+    color: #fff;
+
+    font-size: 24px;
+}
+
+
+/* =========================================================
+   10. INPUT GROUP
+========================================================= */
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #ddd;
+
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   11. INPUT BOX
+========================================================= */
+
+.input-box {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.input-box > i {
+    position: absolute;
+
+    left: 15px;
+
+    color: #7cf03d;
+
+    font-size: 13px;
+
+    pointer-events: none;
+}
+
+
+.input-box input,
+.input-box textarea {
+    width: 100%;
+
+    padding: 12px 15px 12px 42px;
+
+    background: #171b21;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+
+    border-radius: 8px;
+
+    outline: none;
+
+    color: #fff;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    transition: .3s ease;
+}
+
+
+.input-box textarea {
+    min-height: 125px;
+
+    resize: vertical;
+
+    padding-top: 12px;
+}
+
+
+.input-box input::placeholder,
+.input-box textarea::placeholder {
+    color: #656970;
+}
+
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #7cf03d;
+
+    box-shadow: 0 0 12px rgba(124, 240, 61, .08);
+}
+
+
+.textarea-box {
+    align-items: flex-start;
+}
+
+
+.textarea-box > i {
+    top: 15px;
+}
+
+
+/* =========================================================
+   12. SEND BUTTON
+========================================================= */
+
+.send-btn {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 5px;
+
+    padding: 12px 20px;
+
+    background: #7cf03d;
+
+    border: 2px solid #7cf03d;
+
+    border-radius: 8px;
+
+    color: #1f242d;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(124, 240, 61, .2);
+
+    transition: .3s ease;
+}
+
+
+.send-btn:hover {
+    background: transparent;
+
+    color: #7cf03d;
+
+    box-shadow: none;
+}
+
+
+.send-btn i {
+    transition: .3s ease;
+}
+
+
+.send-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================================
+   13. CONTACT FOOTER
+========================================================= */
+
+.contact-footer {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 20px;
+
+    padding: 18px 22px;
+
+    background: rgba(27, 32, 40, .7);
+
+    border: 1px solid rgba(124, 240, 61, .12);
+
+    border-radius: 14px;
+}
+
+
+.footer-icon {
+    width: 43px;
+    height: 43px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: rgba(124, 240, 61, .06);
+
+    border: 1px solid rgba(124, 240, 61, .25);
+
+    border-radius: 10px;
+
+    color: #7cf03d;
+}
+
+
+.contact-footer span {
+    color: #7cf03d;
+
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+.contact-footer h2 {
+    margin-top: 2px;
+
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   14. TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .contact {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-info {
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .contact-socials {
+        margin-top: 0;
+    }
+
+}
+
+
+/* =========================================================
+   15. MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .contact {
+        padding: 115px 5% 50px;
+    }
+
+
+    .contact-heading {
+        margin-bottom: 28px;
+    }
+
+
+    .contact-heading > span {
+        font-size: 10px;
+
+        letter-spacing: 2.5px;
+    }
+
+
+    .contact-heading h1 {
+        font-size: 42px;
+    }
+
+
+    .contact-heading p {
+        font-size: 13px;
+    }
+
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-card {
+        padding: 17px;
+    }
+
+
+    .contact-form-card {
+        padding: 21px;
+    }
+
+
+    .contact-footer {
+        padding: 16px;
+    }
+
+
+    .contact-footer h2 {
+        font-size: 13px;
+    }
+
+}
+
+
+/* =========================================================
+   16. SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .contact {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+
+    .contact-heading h1 {
+        font-size: 38px;
+    }
+
+
+    .contact-card a {
+        font-size: 11px;
+    }
+
+
+    .contact-form-card {
+        padding: 18px;
+    }
+
+}
